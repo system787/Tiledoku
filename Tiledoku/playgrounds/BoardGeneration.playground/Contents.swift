@@ -1,6 +1,9 @@
 import UIKit
 
-let boardSize = 15
+/*
+ Board generation
+ */
+let boardSize = 5
 
 func generateRow() -> [Int] {
     var row = [Int]()
@@ -32,3 +35,28 @@ func generateBoard() -> [[Int]] {
 }
 
 print(generateBoard())
+
+/*
+ GameController functions
+ */
+func getRowCounts(inputArray: [Int]) -> [Int] {
+    var rowCounts = [Int]()
+    var count = 0
+    
+    for i in inputArray {
+        if i == 1 {
+            count += 1
+        } else if i == 0 && count > 0 {
+            rowCounts.append(count)
+            count = 0
+        }
+    }
+    
+    if count > 0 {
+        rowCounts.append(count)
+    }
+    
+    return rowCounts
+}
+
+print(getRowCounts(inputArray: [1,1,1,0,1,0,0,1,1,0]))
