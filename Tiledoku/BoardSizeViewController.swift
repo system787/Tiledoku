@@ -50,12 +50,12 @@ class BoardSizeViewController: UIViewController {
         
         view.backgroundColor = UIColor.clear
             
-        cancelButton.imageView?.contentMode = .scaleAspectFit
-        
-        let cancelImage = UIImage(named: "Cancel")
-        
-        let tintedCancelImage = cancelImage?.withRenderingMode(.alwaysTemplate)
-        cancelButton.setImage(tintedCancelImage, for: .normal)
-        cancelButton.tintColor = .white
+//        cancelButton.imageView?.contentMode = .scaleAspectFit
+//
+//        let cancelImage = UIImage(named: "Cancel")
+//
+//        let tintedCancelImage = cancelImage?.withRenderingMode(.alwaysTemplate)
+//        cancelButton.setImage(tintedCancelImage, for: .normal)
+//        cancelButton.tintColor = .white
     }
 }

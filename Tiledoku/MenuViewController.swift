@@ -13,6 +13,19 @@ import GameplayKit
 
 class MenuViewController: UIViewController, BoardSizeControllerDelegate {
     
+    @IBOutlet weak var startButton: UIButton!
+    
+    @IBAction func openBoardSizeView(_ sender: Any) {
+        self.definesPresentationContext = true
+        self.providesPresentationContextTransitionStyle = true
+        
+        self.overlayBlurredBackgroundView()
+    }
+    
+    @IBAction func closeBoardSizeView(_ sender: Any) {
+        self.removeBlurredBackgroundView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,13 +46,6 @@ class MenuViewController: UIViewController, BoardSizeControllerDelegate {
     
     override var prefersStatusBarHidden: Bool {
         return true
-    }
-    
-    @IBAction func openBoardSizeView(_ sender: Any) {
-        self.definesPresentationContext = true
-        self.providesPresentationContextTransitionStyle = true
-        
-        self.overlayBlurredBackgroundView()
     }
     
     func overlayBlurredBackgroundView() {
@@ -65,13 +71,20 @@ class MenuViewController: UIViewController, BoardSizeControllerDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let identifier = segue.identifier {
-            if identifier == "ShowBoardSizeView" {
-                if let viewController = segue.destination as? BoardSizeViewController {
-                    viewController.mDelegate = self
-                    viewController.modalPresentationStyle = .overFullScreen
-                }
+        super.prepare(for: segue, sender: sender)
+        
+        switch (segue.identifier ?? "") {
+        case "startButtonPressed":
+            guard let boardSizeViewController = segue.destination as? BoardSizeViewController else {
+                fatalError("Unexpected destination: \(segue.destination)")
             }
+            
+            overlayBlurredBackgroundView()
+            boardSizeViewController.mDelegate = self
+            boardSizeViewController.modalPresentationStyle = .overFullScreen
+        
+        default:
+            fatalError("Unexpected Segue Identifier: \(segue.identifier ?? "No segue available")")
         }
     }
     
