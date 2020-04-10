@@ -58,5 +58,5 @@ func getRowCount(inputArray: [Int]) -> [Int] {
     
     return rowCounts
 }
-print(getRowCounts(inputArray: [1,1,1,0,1,0,0,1,1,0]))
+print(getRowCount(inputArray: [1,1,1,0,1,0,0,1,1,0]))
 
