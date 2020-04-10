@@ -11,7 +11,8 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-class MenuViewController: UIViewController {
+class MenuViewController: UIViewController, BoardSizeControllerDelegate {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,7 +35,7 @@ class MenuViewController: UIViewController {
         return true
     }
     
-    @IBAction func openModalView(_ sender: Any) {
+    @IBAction func openBoardSizeView(_ sender: Any) {
         self.definesPresentationContext = true
         self.providesPresentationContextTransitionStyle = true
         
@@ -59,11 +60,15 @@ class MenuViewController: UIViewController {
         }
     }
     
+    func startGame(boardSize: BoardSize) {
+        
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
-            if identifier == "ShowModalView" {
+            if identifier == "ShowBoardSizeView" {
                 if let viewController = segue.destination as? BoardSizeViewController {
-                    viewController.delegate = self
+                    viewController.mDelegate = self
                     viewController.modalPresentationStyle = .overFullScreen
                 }
             }
