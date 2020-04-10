@@ -20,6 +20,8 @@
 		BE2039952440330900B7E165 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2039942440330900B7E165 /* Board.swift */; };
 		BE20399A2440431A00B7E165 /* TileState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2039992440431A00B7E165 /* TileState.swift */; };
 		BE20399E2440469900B7E165 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE20399D2440469900B7E165 /* GameController.swift */; };
+		BE2039A0244050B500B7E165 /* ActionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE20399F244050B500B7E165 /* ActionState.swift */; };
+		BE2039A2244052B700B7E165 /* ActionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2039A1244052B700B7E165 /* ActionResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		BE2039992440431A00B7E165 /* TileState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileState.swift; sourceTree = "<group>"; };
 		BE20399C2440462D00B7E165 /* GameController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GameController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BE20399D2440469900B7E165 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		BE20399F244050B500B7E165 /* ActionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionState.swift; sourceTree = "<group>"; };
+		BE2039A1244052B700B7E165 /* ActionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,8 @@
 				BE2039942440330900B7E165 /* Board.swift */,
 				BE2039992440431A00B7E165 /* TileState.swift */,
 				BE20399D2440469900B7E165 /* GameController.swift */,
+				BE20399F244050B500B7E165 /* ActionState.swift */,
+				BE2039A1244052B700B7E165 /* ActionResult.swift */,
 			);
 			path = game;
 			sourceTree = "<group>";
@@ -306,10 +312,12 @@
 			files = (
 				BE2039672440324900B7E165 /* GameScene.swift in Sources */,
 				BE20399E2440469900B7E165 /* GameController.swift in Sources */,
+				BE2039A2244052B700B7E165 /* ActionResult.swift in Sources */,
 				BE20399A2440431A00B7E165 /* TileState.swift in Sources */,
 				BE2039692440324900B7E165 /* GameViewController.swift in Sources */,
 				BE2039952440330900B7E165 /* Board.swift in Sources */,
 				BE2039612440324900B7E165 /* AppDelegate.swift in Sources */,
+				BE2039A0244050B500B7E165 /* ActionState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

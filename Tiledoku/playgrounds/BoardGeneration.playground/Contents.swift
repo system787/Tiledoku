@@ -39,7 +39,7 @@ print(generateBoard())
 /*
  GameController functions
  */
-func getRowCounts(inputArray: [Int]) -> [Int] {
+func getRowCount(inputArray: [Int]) -> [Int] {
     var rowCounts = [Int]()
     var count = 0
     
@@ -58,5 +58,5 @@ func getRowCounts(inputArray: [Int]) -> [Int] {
     
     return rowCounts
 }
-
 print(getRowCounts(inputArray: [1,1,1,0,1,0,0,1,1,0]))
+

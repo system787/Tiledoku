@@ -1,5 +1,5 @@
 //
-//  TileState.swift
+//  ActionState.swift
 //  Tiledoku
 //
 //  Created by Vincent Hoang on 4/9/20.
@@ -8,10 +8,7 @@
 
 import Foundation
 
-enum TileState: Int {
-    case EMPTY = 0
-    case TRAP = 1
-    case CLEARED = 2
-    case FLAGGED = 3
-    
+enum ActionState {
+    case CHECK
+    case FLAG
 }
