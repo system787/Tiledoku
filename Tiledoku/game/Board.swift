@@ -20,7 +20,8 @@ class Board {
     
     init(_ boardSize: BoardSize) {
         self.mBoardSize = boardSize.rawValue
-        setBoard(generateBoard())
+        self.mGameBoard = [[Int]]()
+        mGameBoard = generateBoard()
     }
     
     private func generateRow() -> [Int] {
@@ -49,14 +50,12 @@ class Board {
         for _ in 0..<mBoardSize {
             board.append(generateRow())
         }
+        
+        return board
     }
     
     func getBoard() -> [[Int]] {
         return mGameBoard
-    }
-    
-    func setBoard(generatedBoard: [[Int]]) {
-        self.mGameBoard = generatedBoard
     }
     
 }
