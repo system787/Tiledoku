@@ -17,6 +17,7 @@
 		BE2039712440324C00B7E165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE20396F2440324C00B7E165 /* LaunchScreen.storyboard */; };
 		BE20397C2440324C00B7E165 /* TiledokuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE20397B2440324C00B7E165 /* TiledokuTests.swift */; };
 		BE2039872440324C00B7E165 /* TiledokuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2039862440324C00B7E165 /* TiledokuUITests.swift */; };
+		BE2039952440330900B7E165 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2039942440330900B7E165 /* Board.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		BE2039822440324C00B7E165 /* TiledokuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiledokuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2039862440324C00B7E165 /* TiledokuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiledokuUITests.swift; sourceTree = "<group>"; };
 		BE2039882440324C00B7E165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2039942440330900B7E165 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,14 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				BE2039602440324900B7E165 /* AppDelegate.swift */,
-				BE2039622440324900B7E165 /* GameScene.sks */,
 				BE2039642440324900B7E165 /* Actions.sks */,
 				BE2039662440324900B7E165 /* GameScene.swift */,
+				BE2039622440324900B7E165 /* GameScene.sks */,
 				BE2039682440324900B7E165 /* GameViewController.swift */,
 				BE20396A2440324900B7E165 /* Main.storyboard */,
 				BE20396D2440324C00B7E165 /* Assets.xcassets */,
 				BE20396F2440324C00B7E165 /* LaunchScreen.storyboard */,
 				BE2039722440324C00B7E165 /* Info.plist */,
+				BE2039942440330900B7E165 /* Board.swift */,
 			);
 			path = Tiledoku;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				BE2039672440324900B7E165 /* GameScene.swift in Sources */,
 				BE2039692440324900B7E165 /* GameViewController.swift in Sources */,
+				BE2039952440330900B7E165 /* Board.swift in Sources */,
 				BE2039612440324900B7E165 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
