@@ -42,6 +42,10 @@ class BoardSizeViewController: UIViewController {
         mDelegate?.startGame(boardSize: BoardSize.SMALL)
     }
     
+    @IBAction func done(_ sender: Any?) {
+        self.dismiss(animated: false, completion: mDelegate?.removeBlurredBackgroundView)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

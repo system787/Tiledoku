@@ -12,24 +12,9 @@ import SpriteKit
 import GameplayKit
 
 class MenuViewController: UIViewController, BoardSizeControllerDelegate {
-    
-    @IBOutlet weak var startButton: UIButton!
-    
-    @IBAction func openBoardSizeView(_ sender: Any) {
-        self.definesPresentationContext = true
-        self.providesPresentationContextTransitionStyle = true
-        
-        self.overlayBlurredBackgroundView()
-    }
-    
-    @IBAction func closeBoardSizeView(_ sender: Any) {
-        self.removeBlurredBackgroundView()
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     
     override var shouldAutorotate: Bool {
@@ -75,14 +60,26 @@ class MenuViewController: UIViewController, BoardSizeControllerDelegate {
         
         switch (segue.identifier ?? "") {
         case "startButtonPressed":
+            
             guard let boardSizeViewController = segue.destination as? BoardSizeViewController else {
                 fatalError("Unexpected destination: \(segue.destination)")
             }
-            
             overlayBlurredBackgroundView()
             boardSizeViewController.mDelegate = self
             boardSizeViewController.modalPresentationStyle = .overFullScreen
-        
+            
+        case "largeButtonPressed":
+            
+            startGame(boardSize: BoardSize.LARGE)
+            
+        case "mediumButtonPressed":
+            
+            startGame(boardSize: BoardSize.MEDIUM)
+            
+        case "smallButtonPressed":
+            
+            startGame(boardSize: BoardSize.SMALL)
+            
         default:
             fatalError("Unexpected Segue Identifier: \(segue.identifier ?? "No segue available")")
         }

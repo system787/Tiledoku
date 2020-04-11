@@ -26,7 +26,6 @@
 		BEF3AB0B2440F81B0012CC14 /* BoardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF3AB0A2440F81B0012CC14 /* BoardScene.swift */; };
 		BEF3AB0D2440F9790012CC14 /* BoardScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BEF3AB0C2440F9790012CC14 /* BoardScene.sks */; };
 		BEF3AB0F2440FCAE0012CC14 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF3AB0E2440FCAE0012CC14 /* MenuViewController.swift */; };
-		BEF3AB112440FCC00012CC14 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF3AB102440FCC00012CC14 /* MenuScene.swift */; };
 		BEF3AB15244109B60012CC14 /* BoardSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF3AB14244109B60012CC14 /* BoardSizeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +74,6 @@
 		BEF3AB0A2440F81B0012CC14 /* BoardScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardScene.swift; sourceTree = "<group>"; };
 		BEF3AB0C2440F9790012CC14 /* BoardScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BoardScene.sks; sourceTree = "<group>"; };
 		BEF3AB0E2440FCAE0012CC14 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		BEF3AB102440FCC00012CC14 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		BEF3AB14244109B60012CC14 /* BoardSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSizeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,7 +141,6 @@
 				BEF3AB0A2440F81B0012CC14 /* BoardScene.swift */,
 				BEF3AB0C2440F9790012CC14 /* BoardScene.sks */,
 				BEF3AB0E2440FCAE0012CC14 /* MenuViewController.swift */,
-				BEF3AB102440FCC00012CC14 /* MenuScene.swift */,
 				BEF3AB14244109B60012CC14 /* BoardSizeViewController.swift */,
 			);
 			path = Tiledoku;
@@ -339,7 +336,6 @@
 				BEF3AB15244109B60012CC14 /* BoardSizeViewController.swift in Sources */,
 				BE2039612440324900B7E165 /* AppDelegate.swift in Sources */,
 				BEF3AB0B2440F81B0012CC14 /* BoardScene.swift in Sources */,
-				BEF3AB112440FCC00012CC14 /* MenuScene.swift in Sources */,
 				BE2039A0244050B500B7E165 /* ActionState.swift in Sources */,
 				BEF3AB092440F80C0012CC14 /* BoardViewController.swift in Sources */,
 			);
